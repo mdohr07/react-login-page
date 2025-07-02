@@ -43,7 +43,13 @@ const LoginSignup = () => {
           </label>
         </div>
 
-        <button type="submit">Sign up</button>
+        <section className="forgot-password">Forgot your Password?</section>
+        <button type="submit" className="btn-signUp">
+          Sign up
+        </button>
+        <button type="submit" className="btn-LogIn">
+          Log in
+        </button>
       </form>
     </div>
   );
