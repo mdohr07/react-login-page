@@ -1,35 +1,52 @@
-import React from 'react'
-import './LoginSignup.css'
+import React from "react";
+import "./LoginSignup.css";
 
-import user_icon from './Assets/user_16x16.png'
-import password_icon from './Assets/password_16x16.png'
-import email_icon from './Assets/email_16x16.png'
+import user_icon from "../../Assets/user_16x16.png";
+import password_icon from "../../Assets/password_16x16.png";
+import email_icon from "../../Assets/email_16x16.png";
 
 const LoginSignup = () => {
   return (
     <div className="container">
       <header>Header</header>
-      <div className="text">Sign up</div>
+      <form>
+        <h2>Sign up</h2>
 
-      <div className="inputs">
-        <section className="input">
-          <img src={user_icon} alt="" />
-          <input type="text" name="" id="" />
-        </section>
+        <div className="input">
+          <label htmlFor="username">
+            <img src={user_icon} alt="User icon" />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+            />
+          </label>
+        </div>
 
-        <section className="input">
-          <img src={email_icon} alt="" />
-          <input type="email" name="" id="" />
-        </section>
+        <div className="input">
+          <label htmlFor="email">
+            <img src={email_icon} alt="Email icon" />
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </label>
+        </div>
 
-        <section className="input">
-          <img src={password_icon} alt="" />
-          <input type="password" name="" id="" />
-        </section>
-      </div>
-      
-      </div>
-  )
-}
+        <div className="input">
+          <label htmlFor="password">
+            <img src={password_icon} alt="Password icon" />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </label>
+        </div>
 
-export default LoginSignup
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+  );
+};
+
+export default LoginSignup;
