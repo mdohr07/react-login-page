@@ -9,8 +9,7 @@ const LoginSignup = () => {
 const [action, setAction] = useState("Sign Up");
 
   return (
-    <div className="container">
-      <header></header>
+    <div className="form-container">
 
       <form>
         <h2>{ action }</h2>
