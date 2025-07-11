@@ -68,7 +68,7 @@ const [action, setAction] = useState("Login");
           Log in
         </button>
 
-        <section className="forgot-password">Forgot your Password?</section>
+        <section className="forgot-password">Forgot your <a href="#">Password</a>?</section>
       </form>
     </div>
   );

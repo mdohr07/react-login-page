@@ -1,7 +1,10 @@
 .Header {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 100px;
     width: 100%;
     margin: 0;
+    padding: 0 7rem;
     background-color: #1b0533;
+    color: #6400c2;
 }

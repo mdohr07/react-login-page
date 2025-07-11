@@ -1,0 +1,17 @@
+.Introduction {
+    width: 90%;
+    height: 100%;
+    padding: 2rem;
+    font-size: large;
+}
+
+.Introduction h2 {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: x-large;
+}
+
+p {
+    text-align: center;
+    margin: 1rem 0;
+}
