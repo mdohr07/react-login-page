@@ -10,8 +10,9 @@ form {
 
 h2 {
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
+    color: #6400c2;
 }
 
 img {
@@ -20,20 +21,41 @@ img {
 }
 
 .inputs {
+    display: grid;
+    justify-content: center;
     background-color: #efefef;
     margin-bottom: 1rem;
     padding: 2rem;
 }
 
+input {
+    width: 180px;
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 .input {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
     margin: 0.5rem;
 }
 
 button {
     margin: auto 2rem;
+    border: 0;
+}
+
+.btn {
+    background-color: #6400c2;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-gray {
+    background-color: #666;
 }
 
 .forgot-password {
