@@ -6,7 +6,7 @@ import password_icon from "../../Assets/password_16x16.png";
 import email_icon from "../../Assets/email_16x16.png";
 
 const LoginSignup = () => {
-const [action, setAction] = useState("Sign Up");
+const [action, setAction] = useState("Login");
 
   return (
     <div className="form-container">
@@ -15,17 +15,22 @@ const [action, setAction] = useState("Sign Up");
         <h2>{ action }</h2>
 
         <div className="inputs">
-          <div className="input">
-            <label htmlFor="username">
-              <img src={user_icon} alt="User icon" />
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Username"
-              />
-            </label>
-          </div>
+          
+          {action === "Login" ? (
+            <div></div>
+          ) : (
+            <div className="input">
+              <label htmlFor="username">
+                <img src={user_icon} alt="User icon" />
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                />
+              </label>
+            </div>
+          )}
 
           <div className="input">
             <label htmlFor="email">
@@ -47,17 +52,18 @@ const [action, setAction] = useState("Sign Up");
           </div>
         </div>
 
-        <button type="submit" className={
-          action === "Login" ? "btn btn-gray" : "btn"
+        <button type="button" className={
+          action === "Signup" ? "btn btn-gray" : "btn"
           } onClick={() => {
-            setAction("Sign Up")
+            setAction("Signup")
           }}>
           Sign up
         </button>
-        <button type="submit" className={
-          action === "Sign Up" ? "btn btn-gray" : "btn"
+
+        <button type="button" className={
+          action === "Login" ? "btn btn-gray" : "btn"
           } onClick={() => {
-            setAction("Log In")
+            setAction("Login")
           }}>
           Log in
         </button>
